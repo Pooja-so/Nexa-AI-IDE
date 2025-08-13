@@ -28,7 +28,7 @@ const UserButton = () => {
               src={user?.image ?? undefined}
               alt={user?.name ?? "User avatar"}
             />
-            <AvatarFallback className="bg-red-500">
+            <AvatarFallback className="bg-gray-200">
               <User className="text-white" />
             </AvatarFallback>
           </Avatar>

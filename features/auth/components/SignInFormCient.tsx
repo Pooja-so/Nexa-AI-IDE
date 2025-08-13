@@ -24,12 +24,12 @@ async function handleGithubSignIn() {
 
 const SignInFormClient = () => {
   return (
-    <Card className="w-full max-w-md rounded-t-none">
+    <Card className="w-full max-w-md rounded-t-none !bg-gray-200">
       <CardHeader className="space-y-1">
-        <CardTitle className="text-2xl font-bold text-center">
+        <CardTitle className="text-4xl font-bold text-center text-black">
           Sign In
         </CardTitle>
-        <CardDescription className="text-center text-xl text-gray-600">
+        <CardDescription className="text-center text-xl text-gray-800 font-mono font-medium ">
           Sign in to Code smarter with Nexa
         </CardDescription>
       </CardHeader>
@@ -39,7 +39,7 @@ const SignInFormClient = () => {
           <Button
             type="submit"
             variant={"outline"}
-            className="w-full h-full rounded-4xl cursor-pointer transform transition duration-300 ease-in-out bg-blue-600 text-white hover:bg-blue-800 hover:text-white hover:translate-x-1 hover:translate-y-1 "
+            className="w-full h-full !bg-blue-600 rounded-4xl cursor-pointer transform transition duration-300 ease-in-out  !text-white hover:!bg-blue-800 hover:text-white hover:translate-x-1 hover:translate-y-1 "
           >
             <Image
               src={"/GoogleIcon.png"}
@@ -54,7 +54,7 @@ const SignInFormClient = () => {
           <Button
             type="submit"
             variant={"outline"}
-            className="w-full h-full rounded-4xl cursor-pointer bg-black text-white hover:font-bold hover:border-amber-950 transform transition duration-300 ease-in-out hover:translate-x-1 hover:translate-y-2"
+            className="w-full h-full rounded-4xl cursor-pointer !bg-black !text-white hover:font-bold hover:!border-amber-950 transform transition duration-300 ease-in-out hover:translate-x-1 hover:translate-y-2"
           >
             <Image
               src={"/GithubIcon.png"}
@@ -68,18 +68,6 @@ const SignInFormClient = () => {
       </CardContent>
 
       <CardFooter>
-        <p className="text-sm text-center text-gray-500 dark:text-gray-400 w-full">
-          By signing in, you agree to our{" "}
-          <a href="#" className="underline hover:text-primary">
-            Terms of Service
-          </a>{" "}
-          and{" "}
-          <a href="#" className="underline hover:text-primary">
-            Privacy Policy
-          </a>
-          .
-        </p>
-        {/* Choose Google or GitHub to sign in */}
       </CardFooter>
     </Card>
   );
